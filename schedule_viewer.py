@@ -553,6 +553,8 @@ https://github.com/google/transitfeed/wiki/ScheduleViewer
 
   print ("To view, point your browser at http://localhost:%d/" %
          (server.server_port))
+
+  sys.stdout.flush()
   server.serve_forever()
 
 
