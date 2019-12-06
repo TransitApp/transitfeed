@@ -5,4 +5,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
+EXPOSE 8765
+
 ENTRYPOINT ["pypy", "./schedule_viewer.py"]
