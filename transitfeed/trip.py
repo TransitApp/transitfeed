@@ -764,4 +764,4 @@ class Trip(GtfsObjectBase):
 
 
 def SortListOfTripByTime(trips):
-  trips.sort(key=GetStartTime)
+  trips = sorted(trips, key=lambda trip: trip.GetStartTime())
